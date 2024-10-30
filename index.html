@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-stack developer specializing in PHP, Laravel, HTML, CSS, JavaScript, Vue.js, and jQuery. Expert in MySQL, video editing, and graphic design. Partner with Falcon Studio for transformative web solutions that enhance user experience.">
+
+
+    <title>Falcon Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert JS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon link -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/favicon.png"> <!-- For Apple devices -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Falcon Studio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- SweetAlert CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+        <!-- SweetAlert JS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    </head>
+
+<body>
+    <div id="header" data-aos="fade-in">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <!-- <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li> -->
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h1>Hi, I'm <span>Falcon</span><br> From Nigeria</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------About----------------------- -->
+
+    <div id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" class="user-img">
+                </div>
+                <div class="about-col-2" data-aos="fade-up">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hi, I'm Quadri Atiku, also know as Falcon. I deliver cutting-edge web solutions that
+                        combine robust backend systems with seamless front-end experiences. As a full-stack developer
+                        focused on backend technologies, I excel in PHP and Laravel, ensuring scalable and secure
+                        applications. My expertise in MySQL optimizes data management, while I create dynamic interfaces
+                        using HTML, CSS, JavaScript, Vue.js, and jQuery. <br><br>
+
+                        In addition to web development, I’m a skilled video editor and graphic designer, crafting
+                        engaging visuals and videos. With a passion for transforming complex problems into effective
+                        solutions, I deliver clean, maintainable code that ensures project success. If you're seeking a
+                        partner to bridge front-end and backend technologies, Falcon Studio is here to elevate your
+                        project.</p>
+
+                    <div class="tab-titles" data-aos="fade-up">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" data-aos="fade-up">
+                        <ul>
+                            <li>
+                                <span>Full Stack Development</span><br>
+                                Developing front-end and back-end interfaces.
+                            </li>
+                            <li>
+                                <span>Video Editing and Animation</span><br>
+                                Crafting engaging videos and animations.
+                            </li>
+                            <li>
+                                <span>Graphics</span><br>
+                                Designing logos and marketing materials.
+                            </li>
+                            <li>
+                                <span>Drone Operation & Aerial Videography</span><br>
+                                Skilled in piloting drones for capturing high-quality aerial footage and photography.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience" data-aos="fade-up">
+                        <ul>
+                            <li>
+                                <span>Western Spring Television & Rave FM</span><br>
+                                Software Engineer & Creative Video Editor (11/23 - present)
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>
+                                Built and managed media websites using HTML, CSS, JavaScript, Vue.js, jQuery, PHP, and
+                                Laravel.
+                            </li>
+                            <li>
+                                <span>Video Editor & Creator at Ravefm/WSTV</span><br>
+                                Produced and edited engaging video content for broadcast and digital platforms.
+                                Collaborated with the team to
+                                deliver high-quality visual media for live shows, interviews, and promotional materials,
+                                ensuring professional
+                                and timely delivery of all projects.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Osun State University</span><br>
+                                B.A. English and International Studies (10/19 - 08/23)
+                            </li>
+                            <li>
+                                <span>Coursework & Skills</span><br>
+                                Graduated with a solid background in English literature and international relations,
+                                focusing on critical thinking, research, and communication. Completed advanced writing,
+                                global studies, and intercultural communication coursework, enhancing analytical skills
+                                and understanding of diverse perspectives.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------Services---------------------- -->
+    <div id="services" class="services" data-aos="fade-up">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list" data-aos="fade-up">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I provide services for building websites with both front-end and server-side features. My
+                        approach includes creating responsive, user-friendly interfaces using technologies like HTML,
+                        CSS, and JavaScript, while handling server-side logic with PHP, Laravel, and MySQL for secure,
+                        dynamic data management. This ensures a seamless experience from the design to the functionality
+                        of the site.</p>
+                    <!-- <a href="#">Learn more...</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-video"></i>
+                    <h2>Video Editing & Creator</h2>
+                    <p>
+                        I create dynamic motion graphics video ads for stores and businesses, blending engaging visuals
+                        with branding to capture attention. Additionally, I specialize in editing various types of
+                        videos, including event coverage, music videos, gaming content, and skits, ensuring a polished,
+                        professional result tailored to each project’s style and audience.</p>
+                    <!-- <a href="#">Learn more...</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-satellite"></i>
+                    <h2>Drone Services</h2>
+                    <p>
+                        I offer professional <b>drone operation services</b>, capturing stunning aerial visuals for real
+                        estate, events, or cinematic projects. With precise piloting and creative vision, I deliver
+                        high-quality aerial photography and videography that provides unique perspectives and enhances
+                        storytelling, bringing your project to life with breathtaking shots.</p>
+                    <!-- <a href="#">Learn more...</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------Portfolio------------------- -->
+
+    <!--  <div id="portfolio" data-aos="fade-up">
+        <div class="container">
+            <h1 class="subt-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>News Website</h3>
+                        <p>The news website I created serves as a dynamic platform for delivering timely and relevant
+                            news articles across various categories.</p>
+                        <a href="http://localhost:8000/home-page"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>News Website</h3>
+                        <p>The news website I created serves as a dynamic platform for delivering timely and relevant
+                            news articles across various categories.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>News Website</h3>
+                        <p>The news website I created serves as a dynamic platform for delivering timely and relevant
+                            news articles across various categories.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div> -->
+
+    <!-- -------------------Contact------------------- -->
+
+    <div id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-up">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> atikuquadrisegun@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+2348130348206</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/atiku.quadrisegun/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/Falcon_295"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/falcon_295/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+
+                <div class="contact-right">
+                    <!-- Update the form action to point to your contact.php file -->
+                    <form id="contact-form" data-aos="fade-up">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+
+                        <!-- Dropdown for continent selection -->
+                        <select name="continent" required>
+                            <option value="" disabled selected>Select Your Continent</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="North America">North America</option>
+                            <option value="Oceania">Oceania</option>
+                            <option value="South America">South America</option>
+                        </select>
+
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2024 Falcon Studio. All rights reserved</p>
+        </div>
+    </div>
+
+
+    <a href="#header" class="scroll-to-top" data-aos="fade-up"><i class="fas fa-arrow-up"></i></a>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+
+    <script>
+        // Scroll to the header when the page loads
+        window.onload = function () {
+            const header = document.getElementById('header');
+            if (header) {
+                header.scrollIntoView();
+            }
+        };
+    </script>
+
+
+
+    <script>
+        function aos_init() {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        }
+        window.addEventListener('load', () => {
+            aos_init();
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('81DRQwHkVH-_0ocLL'); // Replace with your actual EmailJS user ID
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Show SweetAlert loading animation with dark mode
+            const loadingSwal = Swal.fire({
+                title: 'Sending...',
+                text: 'Please wait while we send your message.',
+                icon: 'info',
+                allowOutsideClick: false,
+                onOpen: () => {
+                    Swal.showLoading();
+                },
+                background: '#1e1e1e', // Dark background for loading modal
+                color: '#fff', // Text color
+            });
+
+            const templateParams = {
+                from_name: this.name.value,
+                from_email: this.email.value,
+                continent: this.continent.value,
+                message: this.message.value,
+                to_name: 'Falcon'
+            };
+
+            emailjs.send('service_hibdfri', 'template_dvo07o7', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    // Close loading modal
+                    loadingSwal.close();
+                    // Show SweetAlert for success
+                    Swal.fire({
+                        title: 'Message Sent',
+                        text: "Thank you for your message! We'll get back to you soon.",
+                        icon: 'success',
+                        confirmButtonText: 'Okay',
+                        background: '#1e1e1e', // Dark background
+                        color: '#fff', // Text color
+                        confirmButtonColor: '#ff004f', // Button color
+                    }).then(() => {
+                        // Clear the form fields after the success modal is closed
+                        document.getElementById('contact-form').reset();
+                    });
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    // Close loading modal
+                    loadingSwal.close();
+                    // Show SweetAlert for error
+                    Swal.fire({
+                        title: 'Error',
+                        text: "Something went wrong. Please try again.",
+                        icon: 'error',
+                        confirmButtonText: 'Okay',
+                        background: '#1e1e1e', // Dark background
+                        color: '#fff', // Text color
+                        confirmButtonColor: '#ff004f', // Button color
+                    }).then(() => {
+                        // Clear the form fields after the error modal is closed
+                        document.getElementById('contact-form').reset();
+                    });
+                });
+        });
+    </script>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        window.onscroll = function () {
+            var scrollTopButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+
+</html>
